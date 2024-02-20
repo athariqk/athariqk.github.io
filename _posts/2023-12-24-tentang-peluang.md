@@ -5,7 +5,7 @@ date:   2023-12-24 10:43:44 +0700
 category: pikiran
 tags: concern prospect rant tech
 
-image: /assets/medan-skyline.webp
+image: /assets/images/medan-skyline.webp
 image_caption: Pemandangan Kota Medan di siang hari. Kota terbesar ketiga di Indonesia oleh ekonomi setelah Jakarta dan Surabaya. Tampak banyak pencakar langit sedang dibangun.
 ---
 
