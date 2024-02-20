@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<style>
+    .image {
+        border-radius: 0.5rem;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+    
+    .image-caption {
+        text-align: center;
+        font-size: smaller;
+        color:darkslategray;
+        margin-top: 0.5rem;
+        margin-bottom: 2.5rem;
+    }
+</style>
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        {%- if page.image -%}
+        <figure>
+            <img class="image" src="{{ page.image }}" title="{{ page.image_caption_title }}"
+                        alt="{{ page.image_caption_title }} {{ page.image_caption_description }}" class="rounded-lg" />
+            {% if page.image_caption %}
+            <figcaption class="image-caption">{{ page.image_caption }}</figcaption>
+            {% endif %}
+        </figure>
+        {%- endif -%}
+        <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="post-meta">
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {{ page.date | date: date_format }}
+            </time>
+            {%- if page.author -%}
+            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+                    itemprop="name">{{ page.author }}</span></span>
+            {%- endif -%}
+        </p>
+    </header>
+    <div class="post-content e-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+    {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+    {%- endif -%}
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
