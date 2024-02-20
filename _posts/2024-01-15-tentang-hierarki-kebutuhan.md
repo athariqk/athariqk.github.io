@@ -3,6 +3,8 @@ layout: post
 title:  "Tentang Hierarki Kebutuhan"
 date:   2024-01-15 15:08:53 +0700
 category: pikiran
+
+comments: true
 ---
 
 Memajukan sains perlu terpenuhinya kebutuhan primer, sebelum tercapainya itu, umat manusia tidak akan pernah memiliki kapasitas mental yang cukup untuk <!--more--> memikirkan masalah diluar kebutuhan primernya karena ia sibuk mempertahankan hidup.
