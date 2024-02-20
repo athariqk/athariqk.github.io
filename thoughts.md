@@ -2,6 +2,7 @@
 layout: blog
 title: Thoughts
 permalink: /blog/
+order: 3
 ---
 
 {%- if site.posts.size > 0 -%}
