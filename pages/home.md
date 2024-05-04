@@ -1,8 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+permalink: /
 ---
 
 **My name is Ahmad Ghalib Athariq, I'm a programmer and a hobbyist game developer.** You can find my projects [here](/projects) or see my [about](/about) page if you want to learn more about me.

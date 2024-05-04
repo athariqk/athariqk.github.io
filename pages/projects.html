@@ -1,0 +1,47 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+order: 1
+---
+
+<style>
+    .project-title {
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+
+    .image {
+        border-radius: 0.5rem;
+        background-color: transparent;
+    }
+
+    .see-more-link {
+        font-size: 1.1em;
+    }
+</style>
+
+<h2>Projects</h2>
+<br>
+{%- if site.projects.size > 0 -%}
+<ul class="post-list">
+    {%- for project in site.projects reversed -%}
+    <li>
+        <h3 class="project-title">
+            {{ project.name }}
+            {%- if project.year -%}
+                &nbsp;- {{ project.year }}
+            {%- endif -%}
+        </h3>
+        {%- if project.image -%}
+            <img class="image" src="{{ project.image }}" title="{{ project.image_caption_title }}"
+                alt="{{ project.image_caption_title }} {{ project.image_caption_description }}" />
+        {%- endif -%}
+        <p>{{ project.content | markdownify }}</p>
+        {%- if project.link -%}
+            <a href="{{ project.link }}" class="see-more-link">See more</a>
+        {%- endif -%}
+    </li>
+    {%- endfor -%}
+</ul>
+{%- endif -%}
