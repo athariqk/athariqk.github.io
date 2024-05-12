@@ -1,7 +1,7 @@
 ---
 name: Space Shooter Game
 year: 2022
-link: https://github.com/Athriq/SpaceShooterX
+link: https://github.com/athariqk/SpaceShooterX
 
 image: /assets/images/spaceshooter.png
 ---
