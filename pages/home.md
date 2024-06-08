@@ -5,4 +5,4 @@ permalink: /
 
 **My name is Ahmad Ghalib Athariq, I'm a programmer and a hobbyist game developer.** You can find my projects [here](/projects) or see my [about](/about) page if you want to learn more about me.
 
-For personal and business inquiries, please write to [alib.athariq@gmail.com](mailto:alib.athariq@gmail.com).
+Reach me out at [alib.athariq@gmail.com](mailto:alib.athariq@gmail.com).
