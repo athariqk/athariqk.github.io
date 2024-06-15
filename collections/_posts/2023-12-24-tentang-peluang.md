@@ -4,6 +4,7 @@ title:  "Tentang Peluang"
 date:   2023-12-24 10:43:44 +0700
 category: pikiran
 tags: concern prospect rant tech
+locale: id_ID
 
 comments: true
 

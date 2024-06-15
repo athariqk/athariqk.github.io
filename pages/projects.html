@@ -11,6 +11,10 @@ order: 1
         font-size: 1.3em;
     }
 
+    .project-title-year {
+        color: gray;
+    }
+
     .image {
         border-radius: 0.5rem;
         background-color: transparent;
@@ -30,7 +34,7 @@ order: 1
         <h3 class="project-title">
             {{ project.name }}
             {%- if project.year -%}
-                &nbsp;- {{ project.year }}
+                <span class="project-title-year"> - {{ project.year }}</span>
             {%- endif -%}
         </h3>
         {%- if project.image -%}

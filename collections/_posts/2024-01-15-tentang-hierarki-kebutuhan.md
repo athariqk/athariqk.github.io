@@ -3,6 +3,7 @@ layout: post
 title:  "Tentang Hierarki Kebutuhan"
 date:   2024-01-15 15:08:53 +0700
 category: filosofi
+locale: id_ID
 
 comments: true
 ---
