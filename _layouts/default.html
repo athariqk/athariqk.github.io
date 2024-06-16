@@ -2,18 +2,6 @@
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 {%- include head.html -%}
 <body>
-    {%- include header.html -%}
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
-    </main>
-    {%- include footer.html -%}
+    {{ content }}
 </body>
-{% if page.url =="/" %}
-    <script
-        src="https://www.gravatar.com/6fe470fb4d3e136eba4f45c8071ee5a0d57cf21eccef69544182772685b8168a.json?callback=updateProfileCard"
-        type="text/javascript"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-{% endif %}
 </html>

@@ -1,5 +1,6 @@
 ---
 name: Thrive
+year: 2019
 link: https://github.com/Revolutionary-Games/Thrive
 
 image: /assets/images/thrive-gameplay.png

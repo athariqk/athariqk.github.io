@@ -5,6 +5,8 @@ permalink: /projects/
 order: 1
 ---
 
+{%- include header.html -%}
+
 <style>
     .project-title {
         font-weight: 600;
@@ -15,9 +17,17 @@ order: 1
         color: gray;
     }
 
-    .image {
+    .project-description-box {
+        display: flex;
+    }
+
+    .project-preview {
         border-radius: 0.5rem;
         background-color: transparent;
+        width: 200px;
+        height: fit-content;
+        margin-right: 16px;
+        cursor: pointer;
     }
 
     .see-more-link {
@@ -25,27 +35,42 @@ order: 1
     }
 </style>
 
-<h2>Projects</h2>
-<br>
-{%- if site.projects.size > 0 -%}
-<ul class="post-list">
-    {%- for project in site.projects reversed -%}
-    <li>
-        <h3 class="project-title">
-            {{ project.name }}
-            {%- if project.year -%}
-                <span class="project-title-year"> - {{ project.year }}</span>
-            {%- endif -%}
-        </h3>
-        {%- if project.image -%}
-            <img class="image" src="{{ project.image }}" title="{{ project.image_caption_title }}"
-                alt="{{ project.image_caption_title }} {{ project.image_caption_description }}" />
+<main class="page-content" aria-label="Content">
+    <div class="wrapper">
+        <h2>Projects</h2>
+        <br>
+        {%- if site.projects.size > 0 -%}
+        <ul class="post-list">
+            {%- for project in site.projects reversed -%}
+            <li>
+                <h3 class="project-title">
+                    {{ project.name }}
+                    {%- if project.year -%}
+                    <span class="project-title-year"> - {{ project.year }}</span>
+                    {%- endif -%}
+                </h3>
+                <div class="project-description-box">
+                    {%- if project.image -%}
+                    <img
+                        class="project-preview"
+                        src="{{ project.image }}"
+                        title="{{ project.image_caption_title }}"
+                        alt="{{ project.image_caption_title }} {{ project.image_caption_description }}"
+                        onclick="window.location.assign('{{project.image}}')"
+                    />
+                    {%- endif -%}
+                    <div>
+                        {{ project.content | markdownify }}
+                        {%- if project.link -%}
+                        <a href="{{ project.link }}" class="see-more-link">See more</a>
+                        {%- endif -%}
+                    </div>
+                </div>
+            </li>
+            {%- endfor -%}
+        </ul>
         {%- endif -%}
-        <p>{{ project.content | markdownify }}</p>
-        {%- if project.link -%}
-            <a href="{{ project.link }}" class="see-more-link">See more</a>
-        {%- endif -%}
-    </li>
-    {%- endfor -%}
-</ul>
-{%- endif -%}
+    </div>
+</main>
+
+{%- include footer.html -%}
