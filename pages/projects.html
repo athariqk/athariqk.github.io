@@ -18,20 +18,32 @@ order: 1
     }
 
     .project-description-box {
-        display: flex;
+        display: block;
     }
 
     .project-preview {
-        border-radius: 0.5rem;
-        background-color: transparent;
-        width: 200px;
-        height: fit-content;
-        margin-right: 16px;
-        cursor: pointer;
+        width: auto;
+        margin-bottom: 16px;
+        margin-right: 0;
     }
 
     .see-more-link {
         font-size: 1.1em;
+    }
+
+    @media (min-width: 768px) {
+        .project-description-box {
+            display: flex;
+        }
+
+        .project-preview {
+            border-radius: 0.5rem;
+            background-color: transparent;
+            width: 200px;
+            height: fit-content;
+            margin-right: 16px;
+            cursor: pointer;
+        }
     }
 </style>
 
@@ -51,13 +63,9 @@ order: 1
                 </h3>
                 <div class="project-description-box">
                     {%- if project.image -%}
-                    <img
-                        class="project-preview"
-                        src="{{ project.image }}"
-                        title="{{ project.image_caption_title }}"
+                    <img class="project-preview" src="{{ project.image }}" title="{{ project.image_caption_title }}"
                         alt="{{ project.image_caption_title }} {{ project.image_caption_description }}"
-                        onclick="window.location.assign('{{project.image}}')"
-                    />
+                        onclick="window.location.assign('{{project.image}}')" />
                     {%- endif -%}
                     <div>
                         {{ project.content | markdownify }}
