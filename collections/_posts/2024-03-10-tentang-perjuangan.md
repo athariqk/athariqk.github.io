@@ -2,7 +2,7 @@
 layout: post
 title:  "Tentang Perjuangan"
 date:   2024-03-10 21:54:10 +0700
-category: filosofi
+category: pikiran
 locale: id_ID
 
 comments: true

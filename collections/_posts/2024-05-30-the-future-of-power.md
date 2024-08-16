@@ -2,7 +2,7 @@
 layout: post
 title:  "The Future of Power"
 date:   2024-05-30 09:55:51 +0700
-category: teknologi
+category: artikel
 
 comments: true
 ---
