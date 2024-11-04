@@ -18,24 +18,25 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ghalib A.
+title: Ahmad Ghalib Athariq
 email: alib.athariq@gmail.com
 tagline: Programming & Game Dev
 description: >- # this means to ignore newlines until "baseurl:"
-  Alib's personal site. A place he reserves on the internet just to put himself out there.
+  Ahmad Ghalib's personal site, a place he reserves on the internet just to put himself out there.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://athrqlib.my.id" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/headshot.png
-twitter_username: ghalibathariq
+twitter_username: athariqk
 twitter:
-  username: ghalibathariq
+  username: athariqk
   card: summary
 github_username: athariqk
+linkedin_username: athrqk
 social:
   name: Ahmad Ghalib Athariq
   links:
-    - https://twitter.com/ghalibathariq
-    - https://www.linkedin.com/in/athrq
+    - https://twitter.com/athrqk
+    - https://linkedin.com/in/athrq
     - https://github.com/athariqk
 
 # Build settings

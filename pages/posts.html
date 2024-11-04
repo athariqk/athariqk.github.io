@@ -30,6 +30,28 @@ order: 3
         <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml" | relative_url }}">via RSS</a></p>
         {%- endif -%}
     </div>
+    <button id="back-to-top" title="Back to Top">&uarr;</button>
 </main>
 
 {%- include footer.html -%}
+
+<script>
+    const backToTopBtn = document.getElementById("back-to-top");
+
+    // Show button when user scrolls down
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopBtn.style.display = "flex";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    };
+
+    // Scroll to the top when button is clicked
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
