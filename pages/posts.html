@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Thoughts
+title: Posts
 permalink: /blog/
 order: 3
 ---
@@ -9,7 +9,7 @@ order: 3
 
 <main class="page-content" aria-label="Content">
     <div class="wrapper">
-        <h2 class="post-list-heading">{{ page.list_title | default: "Thoughts" }}</h2>
+        <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
         {%- if site.posts.size > 0 -%}
         <ul class="post-list">
             {%- for post in site.posts -%}
