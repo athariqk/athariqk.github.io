@@ -13,6 +13,10 @@ permalink: /
     .posts {
         margin-top: 2.5em;
     }
+
+    .total-posts {
+        font-size: smaller;
+    }
 </style>
 
 <main class="page-content" aria-label="Content">
@@ -34,7 +38,7 @@ permalink: /
                 </p>
             </div>
             <div class="posts">
-                <h2>{{ page.list_title | default: "Essays and Thoughts" }}</h2>
+                <h2>{{ page.list_title | default: "Essays and Thoughts" }}&nbsp;<span class="total-posts">(total: {{ site.posts.size }})</span></h2>
                 {%- if site.posts.size > 0 -%}
                 <ul class="post-list-brief">
                     {%- for post in site.posts limit:5 -%}
