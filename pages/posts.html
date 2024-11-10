@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Posts
+title: Writing
 permalink: /blog/
 order: 3
 ---
@@ -15,7 +15,7 @@ order: 3
 
 <main class="page-content" aria-label="Content">
     <div class="wrapper">
-        <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}&nbsp;<span class="total-posts">({{ site.posts.size }})</span></h2>
+        <h2 class="post-list-heading">{{ page.list_title | default: "Writing" }}&nbsp;<span class="total-posts">({{ site.posts.size }})</span></h2>
         {%- if site.posts.size > 0 -%}
         <ul class="post-list">
             {%- for post in site.posts -%}
