@@ -10,4 +10,6 @@ comments: true
 
 Memulai dan menyelesaikan hanyalah seperempat dari perjuangan.<!--more-->
 
-Mengira dengan engkau menjalani, mencapai dan menaklukan itu -- akhirnya engkau akan merasa tenang dan terbebas? Salah, sang badai akan terus menerpamu sampai kapanpun... dan ia senantiasa mengamuk setiap langkahmu. *Maka tegar lah* dan carilah pegangan dalam hidup bila perlu.
+Mengira dengan engkau menjalani, mencapai dan menaklukan itu -- akhirnya engkau akan merasa tenang dan terbebas? Salah! Sang badai akan terus menerpamu sampai kapanpun... dan ia senantiasa mengamuk setiap langkahmu.
+
+*Maka tegar lah* dan carilah pegangan dalam hidup bila perlu.
