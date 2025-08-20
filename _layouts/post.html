@@ -19,11 +19,16 @@ layout: default
         margin-top: 0.5rem;
         margin-bottom: 2.5rem;
     }
+
+    .back-button {
+        font-size: 25px;
+    }
 </style>
 
 <main class="page-content" aria-label="Content">
     <div class="wrapper">
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+            <a class="back-button" href="/blog">&larr;</a>
             <header class="post-header">
                 {%- if page.image -%}
                 <figure>

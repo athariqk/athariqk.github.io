@@ -1,0 +1,166 @@
+<style>
+    .progress-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        margin: 30px 0 0 0;
+        border-radius: 8px;
+    }
+
+    .progress-bar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #f0f0f0;
+        display: flex;
+    }
+
+    .segment {
+        position: relative;
+        flex: 1;
+        background: transparent;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .segment::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -10px; /* Extend 10px above */
+        width: 2px;
+        height: calc(100% + 20px); /* Add 20px to height (10px top + 10px bottom) */
+        background: #333;
+        z-index: 3;
+      }
+
+    .segment:last-child::after {
+        display: none;
+    }
+
+    .segment.current {
+        position: relative;
+        overflow: visible;
+    }
+
+    .progress-indicator {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: #007bff;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .progress-indicator .tooltip {
+        white-space: nowrap;
+    }
+
+    .tooltip {
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px 12px;
+        background: #333;
+        color: white;
+        border-radius: 4px;
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+        white-space: nowrap;
+        margin-bottom: 5px;
+    }
+
+    .segment:hover .tooltip,
+    .progress-indicator:hover .tooltip {
+        opacity: 1;
+    }
+
+    .labels-container {
+        position: relative;
+        width: 100%;
+        height: 30px;
+        margin-top: 8px;
+    }
+
+    .label {
+        position: absolute;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        width: 60px;
+    }
+
+    .title {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .progress-label {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+</style>
+
+<div class="progress-container">
+    <div class="progress-bar">
+        <div class="segment current" onmouseover="showTooltip(this)" onmouseout="hideTooltip(this)">
+            <div id="progress" class="progress-indicator" onmouseover="showTooltip(this)"
+                onmouseout="hideTooltip(this)">
+                <div class="tooltip">Current Progress: 0.73</div>
+            </div>
+            <div class="tooltip">Type 0: Pre-Planetary Civilization</div>
+        </div>
+        <div class="segment" onmouseover="showTooltip(this)" onmouseout="hideTooltip(this)">
+            <div class="tooltip">Type 1: Planetary Civilization</div>
+        </div>
+        <div class="segment" onmouseover="showTooltip(this)" onmouseout="hideTooltip(this)">
+            <div class="tooltip">Type 2: Stellar Civilization</div>
+        </div>
+        <div class="segment" onmouseover="showTooltip(this)" onmouseout="hideTooltip(this)">
+            <div class="tooltip">Type 3: Galactic Civilization</div>
+        </div>
+        <div class="segment" onmouseover="showTooltip(this)" onmouseout="hideTooltip(this)">
+            <div class="tooltip">Type 4: Universal Civilization</div>
+        </div>
+    </div>
+</div>
+
+<div class="progress-label">Type 0.73</div>
+
+<script>
+    // Configuration
+    const currentProgress = 0.7276;
+    const segmentWidth = 100; // Each segment represents 1.0 in the scale
+
+    // Calculate and set progress width
+    function updateProgress() {
+        const progressElement = document.getElementById('progress');
+        const width = (currentProgress % 5) * segmentWidth;
+        progressElement.style.width = `${width}%`;
+    }
+
+    function showTooltip(element) {
+        const tooltip = element.querySelector('.tooltip');
+        if (tooltip) {
+            tooltip.style.opacity = '1';
+        }
+    }
+
+    function hideTooltip(element) {
+        const tooltip = element.querySelector('.tooltip');
+        if (tooltip) {
+            tooltip.style.opacity = '0';
+        }
+    }
+
+    // Initialize progress bar
+    updateProgress();
+</script>
