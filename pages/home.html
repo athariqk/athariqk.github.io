@@ -17,6 +17,41 @@ permalink: /
     .total-posts {
         font-size: smaller;
     }
+
+    .kardashev-container {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        color: #333;
+    }
+
+    .cv-button-wrapper {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .cv-button {
+        display: inline;
+        background-color: #475569;
+        border-radius: 2px;
+        padding-right: 5px;
+        padding-left: 3px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+        font-size: medium;
+        color: white !important;
+        text-decoration: none !important;
+        cursor: pointer;
+        margin: 0 auto;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cv-button:hover {
+        background-color: #33435a;
+    }
 </style>
 
 <main class="page-content" aria-label="Content">
@@ -34,9 +69,13 @@ permalink: /
                     page if you wish to learn more about me.
                 </p>
                 <p>
-                    You can reach me out via <a href="mailto:alib.athariq@gmail.com">email</a>.
+                    You can reach me out via <a href="mailto:alib.athariq@gmail.com">email</a> or <a class="cv-button" href="/assets/CV_Ahmad_Ghalib.pdf">📄 view my CV</a>.
                 </p>
             </div>
+            <!-- <div class="kardashev-container">
+                <p>Tracking Mankind's Progress</p>
+                {%- include kardashev.html -%}
+            </div> -->
             <div class="posts">
                 <h2>{{ page.list_title | default: "Essays and Thoughts" }}&nbsp;<span class="total-posts">(total: {{
                         site.posts.size }})</span></h2>
