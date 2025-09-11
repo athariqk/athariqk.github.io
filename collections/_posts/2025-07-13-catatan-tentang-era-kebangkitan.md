@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Catatan tentang Era Kebangkitan"
-date:   2025-07-13 10:02:00 +0700
+date:   2025-09-11 10:57:00 +0700
 category: fiction
 tags: alternate history optimist
 
@@ -10,7 +10,7 @@ comments: true
 
 "Indonesia kekurangan tenaga pendidik berkualitas".
 
-Merupakan permasalahan yang sudah lama hidup di kesadaran para elit nan bijak di negeri yang terletak di sumbu khatulistiwa ini. Demikianlah pada suatu masa yang mendekati milenium baru, pemerintah kala itu menggagas kebijakan kontroversial yang dikenal dengan nama Gerakan Cendekia Nusantara atau GCN.<!--more-->
+Merupakan permasalahan yang sudah lama hidup di kesadaran para elit nan bijak di negeri yang terletak di sumbu khatulistiwa ini. Demikianlah pada suatu masa yang mendekati abad baru, pemerintah kala itu menggagas kebijakan kontroversial yang dikenal dengan nama Gerakan Cendekia Nusantara atau GCN.<!--more-->
 
 Kebijakan ini mendatangkan guru-guru berkompeten dan berkualitas dari luar negeri. Tujuannya bukan menggantikan tendik atau calon tendik lokal tapi "melengkapi" kekurangan. Dibentuklah sebuah dewan pelaksana dari beberapa institusi perguruan tinggi dan organisasi pendidikan dengan tujuan untuk memilih calon guru asing yang terbaik dari yang terbaik.
 
@@ -20,7 +20,7 @@ Dibekali dengan ekspektasi realita kondisi lapangan, para calon guru asing yang 
 
 Dalam fisika, hukum kekekalan massa menyatakan bahwa kita tidak bisa mengadakan sesuatu dari ketiadaan, melainkan mengubah. Mungkin inilah yang menjadi dasar filosofis para pembuat kebijakan GCN itu. Bahwa cahaya ilmu dan ketajaman nurani pun serupa: ia tidak lahir begitu saja dari ruang kosong dan stagnan, melainkan selalu diturunkan, dipindahkan, dan diwariskan dari satu insan kepada insan lainnya, dari manapun asalnya.
 
-Dalam suatu pidatonya yang kini terpatri dalam monumen digital, Presiden ke-18 kala itu pernah mengatakan: "*...Indonesia kan kaya, kenapa tidak? Sisihkan aja beberapa ratusan triliun selama 4 atau 8 tahun. Bahkan kalau berkenan, mobilisasikan instrumen negara seperti DANARA untuk modalnya*".
+Dalam suatu pidatonya yang kini terpatri dalam monumen digital, Presiden ke-18 kala itu pernah mengatakan: "*...Indonesia kan kaya, kenapa tidak? Sisihkan aja beberapa ratusan triliun selama 5 atau 10 tahun. Bahkan kalau berkenan, mobilisasikan instrumen negara seperti DANARA untuk modalnya*".
 
 Tidak hanya omongan belaka, rupanya tindakannya benar-benar nyata dan amanah.
 
@@ -42,7 +42,7 @@ Tamat.
 
 *Tertanda,\\
 seorang pembelajar sejarah\\
-13 Juli 2345 Masehi.*
+13 Juli 2845 Masehi.*
 
 <br/>
 
