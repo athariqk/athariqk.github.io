@@ -2,7 +2,7 @@
 layout: default
 title: About
 permalink: /about/
-order: 2
+order: 3
 ---
 
 {%- include header.html -%}
@@ -89,7 +89,7 @@ order: 2
         <div id="about">
             <h2 id="a-little-about-me">A little about me.</h2>
             <p>
-                Halo. My name is <b>Ahmad Ghalib Athariq</b>, I'm 22 years old. I live in <abbr
+                Halo. My name is <b>Ahmad Ghalib Athariq</b>, I'm <span id="age"></span> years old. I live in <abbr
                     title="Eastern Hemisphere of the Earth, Solar System, Orion Arm of the Milky Way, Local Group, The Observable Universe">Medan,
                     Indonesia</abbr>. I'm a programmer and a hobbyist game developer.
                 My mission is to build meaningful software that could help improve people's lives (however
@@ -129,10 +129,12 @@ order: 2
             </p>
         </div>
         <div style="margin-top: 3em;">
-            <h3>Identity Cards:</h3>
+            <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
             <div class="personal-cards">
                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light"
-                    data-type="HORIZONTAL" data-vanity="athrq" data-version="v1"></div>
+                    data-type="HORIZONTAL" data-vanity="ahmadghalib" data-version="v1"><a
+                        class="badge-base__link LI-simple-link"
+                        href="https://id.linkedin.com/in/ahmadghalib?trk=profile-badge"></a></div>
                 <div class="gravatar-card">
                     <div class="gravatar-card-cover">
                         <svg height="25px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
@@ -175,6 +177,12 @@ order: 2
         document.getElementById("display-name").textContent = profile.entry[0].displayName;
         document.getElementById("about-me").textContent = profile.entry[0].aboutMe;
     }
+
+    const dob = new Date(2003, 8, 8);
+    const today = new Date();
+    let age = today.getFullYear() - dob.getFullYear();
+    if (today < new Date(today.getFullYear(), dob.getMonth(), dob.getDate())) age--;
+    document.getElementById("age").textContent = age;
 </script>
 
 {%- include footer.html -%}
